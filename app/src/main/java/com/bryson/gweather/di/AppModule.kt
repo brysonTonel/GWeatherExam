@@ -1,7 +1,6 @@
 package com.bryson.gweather.di
 
 import android.content.Context
-import android.util.Log
 import androidx.room.Room
 import com.bryson.gweather.BuildConfig
 import com.bryson.gweather.data.local.WeatherDao
@@ -56,7 +55,11 @@ object AppModule {
     @Singleton
     fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         return HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
+            level = if (BuildConfig.DEBUG) {
+                HttpLoggingInterceptor.Level.BODY
+            } else {
+                HttpLoggingInterceptor.Level.NONE
+            }
         }
     }
 
