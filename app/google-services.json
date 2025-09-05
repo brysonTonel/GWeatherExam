@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405904956508",
+    "project_id": "gweather-24933",
+    "storage_bucket": "gweather-24933.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405904956508:android:d35ba913ed1f45a5dc5a99",
+        "android_client_info": {
+          "package_name": "com.bryson.gweather"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ItAQe_fIpiKSQdAbIv_RiFf2ZAzFmpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
